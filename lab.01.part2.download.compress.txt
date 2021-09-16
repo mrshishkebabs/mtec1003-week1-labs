@@ -15,46 +15,45 @@ Feel free to use your workstation to test your answers to the questions that don
 1. Write the command that you would use to change to the root directory.
 ----------
 
-
+cd /
 
 ==========
 2. Write the command that you would use to change to your home directory.
 ----------
 
-
+cd ~
 
 ==========
 3. What's the absolute path to your Desktop directory?
 ----------
 
-
+/Users/Ken Park/desktop
 
 ==========
 4. If you're in your home directory, how would you create a new directory on your desktop
 called stuff without changing your directory?  Write your command below.
 ----------
 
-
-
+mkdir stuff
 
 ==========
 5. If you're in your Desktop directory, how would you change to two directories right above it (again, this should be /Users) using a relative path?  Write your command below.
 ----------
 
-
+cd ../..
 
 ==========
 6. What's the shortcut for changing to the directory that you were just previously in?  For example, if I were in /Volumes... and I changed to /Users/professor/Desktop, what's a quick way of changing to /Volumes without writing something like cd /Volumes?
 ----------
 
-
+cd -
 
 ==========
 7. How would you show all of the files (including hidden ones) with detailed (long) information
 for all files on your Desktop — if you're currently in your home directory?  Write your command below.
 ----------
 
-
+ls -la /users/Ken Park/desktop
 
 ==========
 Part 2 - Output, Download and Uncompress
@@ -75,8 +74,7 @@ $ echo hello there
 Copy and paste the output below.
 ----------
 
-
-
+hello there
 
 ==========
 2. Type:
@@ -86,7 +84,7 @@ $ echo whoa
 Copy and paste the output below.
 ----------
 
-
+whoa
 
 ==========
 3. Type:
@@ -96,7 +94,7 @@ $ echo good mornin'
 Copy and paste the output below.
 ----------
 
-
+>
 
 ==========
 4. Uh-oh... we're stuck!
@@ -114,7 +112,7 @@ $ echo "good mornin'"
 Copy and paste the output below.
 ----------
 
-
+good mornin'
 
 ==========
 6. There are some other symbols that have special meanings if you don't quote them.
@@ -125,8 +123,8 @@ $ echo *
 What happens?
 ----------
 
-
-
+Brings up files that are out in the open
+(P.S. It really messy so I didn't want to copy)
 
 ==========
 7. Ok... that's a lot of output.  How do we clean up our screen so that it's empty again?
@@ -134,7 +132,7 @@ What happens?
 Write the command that you used below:
 ----------
 
-
+clear
 
 ==========
 Downloading files from a web site:  We'll use the following method to download more lab materials!
@@ -149,11 +147,9 @@ $ curl -o mygoogle.html www.google.com
 Now copy and paste the output below.
 ----------
 
-
-
-
-
-
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 13971    0 13971    0     0  43933      0 --:--:-- --:--:-- --:--:-- 43933
 
 ==========
 9. Now let's download some course-related files. First, figure out what directory you're in.
@@ -161,9 +157,8 @@ Now copy and paste the output below.
 Write the command you used to determine your directory. Also, copy and paste the output below.
 ----------
 
-
-
-
+$ pwd
+/c/Users/Ken Park
 
 ==========
 10. If you're not in your home directory, change to it (use the shortcut).
@@ -172,7 +167,7 @@ Write the command that you used to change to your home directory.
 If you were already in your home directory, write the command that you *would* have used to change to it!
 ----------
 
-
+cd ~
 
 ==========
 11. So... the lab materials are located at this url:
@@ -189,13 +184,10 @@ Write down the command(s) that you used to download the file below.
 Finally, write the output of the command below.
 ----------
 
-
-
-
-
-
-
-
+$ curl -o MTEC1003-my-flashcards.zip http://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/01/my-flashcards.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  9115  100  9115    0     0  57689      0 --:--:-- --:--:-- --:--:-- 58057
 
 ==========
 12. Go back up to your home directory.
@@ -205,8 +197,60 @@ List the contents of your home directory to prove that the directory was created
 Copy and paste the output below.
 ----------
 
-
-
+'3D Objects'/
+ ansel/
+ AppData/
+'Application Data'@
+ BullseyeCoverageError.txt
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+'Creative Coding'/
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+'Final Project'/
+'Fragment Game Project'/
+ get-pip.py*
+ IntelGraphicsProfiles/
+ Ken-Park/
+ labmaterials.zip
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+'Monkey Ball'/
+ mtec1003/
+ Music/
+'My Documents'@
+ mygoogle.html
+ NetHood@
+'New Unity Project'/
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{ba6356e9-00cc-11eb-ba06-c64e65614d43}.TM.blf
+ NTUSER.DAT{ba6356e9-00cc-11eb-ba06-c64e65614d43}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{ba6356e9-00cc-11eb-ba06-c64e65614d43}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ PrintHood@
+'Project #1'/
+'Project 2'/
+'Project Yokai'/
+ pslog_20200211_154731.log
+ PycharmProjects/
+ Recent@
+ Roaming/
+'Saved Games'/
+ Searches/
+ SendTo@
+ source/
+'Start Menu'@
+ stuff/
+ Templates@
+ Videos/
 
 ==========
 13. Change into the "stuff" directory that you just created.
@@ -220,7 +264,7 @@ List the files in the directory you're currently in (which should be stuff).
 Copy and paste the output below.
 ----------
 
-
+hello.txt
 
 ==========
 14. Go up one directory back into your home directory.
@@ -233,8 +277,65 @@ List the files in the directory you're currently in (which should be home).
 Copy and paste the output below.
 ----------
 
-
-
+'3D Objects'/
+ aardvark/
+ ansel/
+ AppData/
+'Application Data'@
+ BullseyeCoverageError.txt
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+'Creative Coding'/
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+'Final Project'/
+ foo/
+'Fragment Game Project'/
+ get-pip.py*
+ IntelGraphicsProfiles/
+ Ken-Park/
+ labmaterials.zip
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+'Monkey Ball'/
+ mtec1002-lab-02/
+ mtec1003/
+ Music/
+'My Documents'@
+ mygoogle.html
+ NetHood@
+'New Unity Project'/
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{ba6356e9-00cc-11eb-ba06-c64e65614d43}.TM.blf
+ NTUSER.DAT{ba6356e9-00cc-11eb-ba06-c64e65614d43}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{ba6356e9-00cc-11eb-ba06-c64e65614d43}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ pineapple/
+ PrintHood@
+'Project #1'/
+'Project 2'/
+'Project Yokai'/
+ pslog_20200211_154731.log
+ PycharmProjects/
+ Recent@
+ Roaming/
+'Saved Games'/
+ Searches/
+ SendTo@
+ source/
+'Start Menu'@
+ stuff/
+ stuff.tar <-----
+ Templates@
+ Videos/
 
 ==========
 15. Go up one directory back into your home directory.
@@ -245,10 +346,65 @@ $ tar -cvf stuff.tar stuff
 Copy and paste the output below.
 ----------
 
-
-
-
-
+'3D Objects'/
+ aardvark/
+ ansel/
+ AppData/
+'Application Data'@
+ BullseyeCoverageError.txt
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+'Creative Coding'/
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+'Final Project'/
+ foo/
+'Fragment Game Project'/
+ get-pip.py*
+ IntelGraphicsProfiles/
+ Ken-Park/
+ labmaterials.zip
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+'Monkey Ball'/
+ mtec1002-lab-02/
+ mtec1003/
+ Music/
+'My Documents'@
+ mygoogle.html
+ NetHood@
+'New Unity Project'/
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{ba6356e9-00cc-11eb-ba06-c64e65614d43}.TM.blf
+ NTUSER.DAT{ba6356e9-00cc-11eb-ba06-c64e65614d43}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{ba6356e9-00cc-11eb-ba06-c64e65614d43}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ pineapple/
+ PrintHood@
+'Project #1'/
+'Project 2'/
+'Project Yokai'/
+ pslog_20200211_154731.log
+ PycharmProjects/
+ Recent@
+ Roaming/
+'Saved Games'/
+ Searches/
+ SendTo@
+ source/
+'Start Menu'@
+ stuff/
+ stuff.tar <-----
+ Templates@
+ Videos/
 
 ==========
 16. Now compress it! Type:
@@ -259,9 +415,65 @@ List your files again.... you should have a new file with a .gz extension.
 Copy and paste the output of your this below.
 ----------
 
-
-
-
+'3D Objects'/
+ aardvark/
+ ansel/
+ AppData/
+'Application Data'@
+ BullseyeCoverageError.txt
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+'Creative Coding'/
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+'Final Project'/
+ foo/
+'Fragment Game Project'/
+ get-pip.py*
+ IntelGraphicsProfiles/
+ Ken-Park/
+ labmaterials.zip
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+'Monkey Ball'/
+ mtec1002-lab-02/
+ mtec1003/
+ Music/
+'My Documents'@
+ mygoogle.html
+ NetHood@
+'New Unity Project'/
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{ba6356e9-00cc-11eb-ba06-c64e65614d43}.TM.blf
+ NTUSER.DAT{ba6356e9-00cc-11eb-ba06-c64e65614d43}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{ba6356e9-00cc-11eb-ba06-c64e65614d43}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ pineapple/
+ PrintHood@
+'Project #1'/
+'Project 2'/
+'Project Yokai'/
+ pslog_20200211_154731.log
+ PycharmProjects/
+ Recent@
+ Roaming/
+'Saved Games'/
+ Searches/
+ SendTo@
+ source/
+'Start Menu'@
+ stuff/
+ stuff.tar.gz <-----
+ Templates@
+ Videos/
 
 ==========
 17. Now, let's uncompress the same file.
@@ -270,3 +482,63 @@ $ tar -xvf stuff.tar.gz
 
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
+
+'3D Objects'/
+ aardvark/
+ ansel/
+ AppData/
+'Application Data'@
+ BullseyeCoverageError.txt
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+'Creative Coding'/
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+'Final Project'/
+ foo/
+'Fragment Game Project'/
+ get-pip.py*
+ IntelGraphicsProfiles/
+ Ken-Park/
+ labmaterials.zip
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+'Monkey Ball'/
+ mtec1002-lab-02/
+ mtec1003/
+ Music/
+'My Documents'@
+ mygoogle.html
+ NetHood@
+'New Unity Project'/
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{ba6356e9-00cc-11eb-ba06-c64e65614d43}.TM.blf
+ NTUSER.DAT{ba6356e9-00cc-11eb-ba06-c64e65614d43}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{ba6356e9-00cc-11eb-ba06-c64e65614d43}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ pineapple/
+ PrintHood@
+'Project #1'/
+'Project 2'/
+'Project Yokai'/
+ pslog_20200211_154731.log
+ PycharmProjects/
+ Recent@
+ Roaming/
+'Saved Games'/
+ Searches/
+ SendTo@
+ source/
+'Start Menu'@
+ stuff/
+ stuff.tar.gz <-----
+ Templates@
+ Videos/
